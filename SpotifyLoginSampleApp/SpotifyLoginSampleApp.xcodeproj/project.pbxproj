@@ -17,6 +17,7 @@
 		3536808528718100004FA7F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536808428718100004FA7F4 /* LoginViewController.swift */; };
 		35368087287189D9004FA7F4 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35368086287189D9004FA7F4 /* EnterEmailViewController.swift */; };
 		3536808928718ED8004FA7F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536808828718ED8004FA7F4 /* MainViewController.swift */; };
+		355DB0202873207F0009D933 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 355DB01F2873207F0009D933 /* GoogleSignIn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				352712822871B8AC003110B8 /* FirebaseAuth in Frameworks */,
+				355DB0202873207F0009D933 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +52,7 @@
 			children = (
 				3536806F287180A0004FA7F4 /* SpotifyLoginSampleApp */,
 				3536806E287180A0004FA7F4 /* Products */,
+				355DB01E2873207F0009D933 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,9 +67,9 @@
 		3536806F287180A0004FA7F4 /* SpotifyLoginSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				35368076287180A0004FA7F4 /* Main.storyboard */,
 				35368070287180A0004FA7F4 /* AppDelegate.swift */,
 				35368072287180A0004FA7F4 /* SceneDelegate.swift */,
-				35368076287180A0004FA7F4 /* Main.storyboard */,
 				3536808428718100004FA7F4 /* LoginViewController.swift */,
 				35368086287189D9004FA7F4 /* EnterEmailViewController.swift */,
 				3536808828718ED8004FA7F4 /* MainViewController.swift */,
@@ -76,6 +79,13 @@
 				3527127E2871B778003110B8 /* GoogleService-Info.plist */,
 			);
 			path = SpotifyLoginSampleApp;
+			sourceTree = "<group>";
+		};
+		355DB01E2873207F0009D933 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +106,7 @@
 			name = SpotifyLoginSampleApp;
 			packageProductDependencies = (
 				352712812871B8AC003110B8 /* FirebaseAuth */,
+				355DB01F2873207F0009D933 /* GoogleSignIn */,
 			);
 			productName = SpotifyLoginSampleApp;
 			productReference = 3536806D287180A0004FA7F4 /* SpotifyLoginSampleApp.app */;
@@ -127,6 +138,7 @@
 			mainGroup = 35368064287180A0004FA7F4;
 			packageReferences = (
 				352712802871B8AC003110B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				355FDD1A28731F9100207911 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 3536806E287180A0004FA7F4 /* Products */;
 			projectDirPath = "";
@@ -388,6 +400,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		355FDD1A28731F9100207911 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -395,6 +415,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 352712802871B8AC003110B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		355DB01F2873207F0009D933 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 355FDD1A28731F9100207911 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
