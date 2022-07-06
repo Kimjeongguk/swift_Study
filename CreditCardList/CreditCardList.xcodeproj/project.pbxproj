@@ -7,129 +7,128 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3527127F2871B778003110B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3527127E2871B778003110B8 /* GoogleService-Info.plist */; };
-		352712822871B8AC003110B8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 352712812871B8AC003110B8 /* FirebaseAuth */; };
-		35368071287180A0004FA7F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35368070287180A0004FA7F4 /* AppDelegate.swift */; };
-		35368073287180A0004FA7F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35368072287180A0004FA7F4 /* SceneDelegate.swift */; };
-		35368078287180A0004FA7F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35368076287180A0004FA7F4 /* Main.storyboard */; };
-		3536807A287180A4004FA7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35368079287180A4004FA7F4 /* Assets.xcassets */; };
-		3536807D287180A4004FA7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3536807B287180A4004FA7F4 /* LaunchScreen.storyboard */; };
-		3536808528718100004FA7F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536808428718100004FA7F4 /* LoginViewController.swift */; };
-		35368087287189D9004FA7F4 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35368086287189D9004FA7F4 /* EnterEmailViewController.swift */; };
-		3536808928718ED8004FA7F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536808828718ED8004FA7F4 /* MainViewController.swift */; };
-		355DB0202873207F0009D933 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 355DB01F2873207F0009D933 /* GoogleSignIn */; };
+		355368622875CE3000B100B4 /* money.json in Resources */ = {isa = PBXBuildFile; fileRef = 355368612875CE2F00B100B4 /* money.json */; };
+		35ABAF4B2875C5B300948C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF4A2875C5B300948C6F /* AppDelegate.swift */; };
+		35ABAF4D2875C5B300948C6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF4C2875C5B300948C6F /* SceneDelegate.swift */; };
+		35ABAF4F2875C5B300948C6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF4E2875C5B300948C6F /* ViewController.swift */; };
+		35ABAF522875C5B300948C6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ABAF502875C5B300948C6F /* Main.storyboard */; };
+		35ABAF542875C5B500948C6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35ABAF532875C5B500948C6F /* Assets.xcassets */; };
+		35ABAF572875C5B500948C6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ABAF552875C5B500948C6F /* LaunchScreen.storyboard */; };
+		35ABAF5F2875C5CA00948C6F /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF5E2875C5CA00948C6F /* CardListViewController.swift */; };
+		35ABAF612875C6B900948C6F /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF602875C6B900948C6F /* CreditCard.swift */; };
+		35ABAF642875C76C00948C6F /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF622875C76C00948C6F /* CardListCell.swift */; };
+		35ABAF652875C76C00948C6F /* CardListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35ABAF632875C76C00948C6F /* CardListCell.xib */; };
+		35ABAF682875CB8F00948C6F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 35ABAF672875CB8F00948C6F /* Kingfisher */; };
+		35ABAF6A2875CC0E00948C6F /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF692875CC0E00948C6F /* CardDetailViewController.swift */; };
+		35ABAF6D2875CD8200948C6F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 35ABAF6C2875CD8200948C6F /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3527127E2871B778003110B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3536806D287180A0004FA7F4 /* SpotifyLoginSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyLoginSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		35368070287180A0004FA7F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		35368072287180A0004FA7F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		35368077287180A0004FA7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		35368079287180A4004FA7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3536807C287180A4004FA7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3536807E287180A4004FA7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3536808428718100004FA7F4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		35368086287189D9004FA7F4 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
-		3536808828718ED8004FA7F4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		355DB0212875C1460009D933 /* SpotifyLoginSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpotifyLoginSampleApp.entitlements; sourceTree = "<group>"; };
+		355368612875CE2F00B100B4 /* money.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = money.json; sourceTree = "<group>"; };
+		35ABAF472875C5B300948C6F /* CreditCardList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35ABAF4A2875C5B300948C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35ABAF4C2875C5B300948C6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		35ABAF4E2875C5B300948C6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35ABAF512875C5B300948C6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35ABAF532875C5B500948C6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35ABAF562875C5B500948C6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35ABAF582875C5B500948C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35ABAF5E2875C5CA00948C6F /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
+		35ABAF602875C6B900948C6F /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		35ABAF622875C76C00948C6F /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
+		35ABAF632875C76C00948C6F /* CardListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListCell.xib; sourceTree = "<group>"; };
+		35ABAF692875CC0E00948C6F /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3536806A287180A0004FA7F4 /* Frameworks */ = {
+		35ABAF442875C5B300948C6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				352712822871B8AC003110B8 /* FirebaseAuth in Frameworks */,
-				355DB0202873207F0009D933 /* GoogleSignIn in Frameworks */,
+				35ABAF682875CB8F00948C6F /* Kingfisher in Frameworks */,
+				35ABAF6D2875CD8200948C6F /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		35368064287180A0004FA7F4 = {
+		35ABAF3E2875C5B300948C6F = {
 			isa = PBXGroup;
 			children = (
-				3536806F287180A0004FA7F4 /* SpotifyLoginSampleApp */,
-				3536806E287180A0004FA7F4 /* Products */,
-				355DB01E2873207F0009D933 /* Frameworks */,
+				35ABAF492875C5B300948C6F /* CreditCardList */,
+				35ABAF482875C5B300948C6F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3536806E287180A0004FA7F4 /* Products */ = {
+		35ABAF482875C5B300948C6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3536806D287180A0004FA7F4 /* SpotifyLoginSampleApp.app */,
+				35ABAF472875C5B300948C6F /* CreditCardList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3536806F287180A0004FA7F4 /* SpotifyLoginSampleApp */ = {
+		35ABAF492875C5B300948C6F /* CreditCardList */ = {
 			isa = PBXGroup;
 			children = (
-				355DB0212875C1460009D933 /* SpotifyLoginSampleApp.entitlements */,
-				35368076287180A0004FA7F4 /* Main.storyboard */,
-				35368070287180A0004FA7F4 /* AppDelegate.swift */,
-				35368072287180A0004FA7F4 /* SceneDelegate.swift */,
-				3536808428718100004FA7F4 /* LoginViewController.swift */,
-				35368086287189D9004FA7F4 /* EnterEmailViewController.swift */,
-				3536808828718ED8004FA7F4 /* MainViewController.swift */,
-				35368079287180A4004FA7F4 /* Assets.xcassets */,
-				3536807B287180A4004FA7F4 /* LaunchScreen.storyboard */,
-				3536807E287180A4004FA7F4 /* Info.plist */,
-				3527127E2871B778003110B8 /* GoogleService-Info.plist */,
+				355368612875CE2F00B100B4 /* money.json */,
+				35ABAF5E2875C5CA00948C6F /* CardListViewController.swift */,
+				35ABAF692875CC0E00948C6F /* CardDetailViewController.swift */,
+				35ABAF4A2875C5B300948C6F /* AppDelegate.swift */,
+				35ABAF4C2875C5B300948C6F /* SceneDelegate.swift */,
+				35ABAF4E2875C5B300948C6F /* ViewController.swift */,
+				35ABAF502875C5B300948C6F /* Main.storyboard */,
+				35ABAF602875C6B900948C6F /* CreditCard.swift */,
+				35ABAF622875C76C00948C6F /* CardListCell.swift */,
+				35ABAF632875C76C00948C6F /* CardListCell.xib */,
+				35ABAF532875C5B500948C6F /* Assets.xcassets */,
+				35ABAF552875C5B500948C6F /* LaunchScreen.storyboard */,
+				35ABAF582875C5B500948C6F /* Info.plist */,
 			);
-			path = SpotifyLoginSampleApp;
-			sourceTree = "<group>";
-		};
-		355DB01E2873207F0009D933 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
+			path = CreditCardList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3536806C287180A0004FA7F4 /* SpotifyLoginSampleApp */ = {
+		35ABAF462875C5B300948C6F /* CreditCardList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35368081287180A4004FA7F4 /* Build configuration list for PBXNativeTarget "SpotifyLoginSampleApp" */;
+			buildConfigurationList = 35ABAF5B2875C5B500948C6F /* Build configuration list for PBXNativeTarget "CreditCardList" */;
 			buildPhases = (
-				35368069287180A0004FA7F4 /* Sources */,
-				3536806A287180A0004FA7F4 /* Frameworks */,
-				3536806B287180A0004FA7F4 /* Resources */,
+				35ABAF432875C5B300948C6F /* Sources */,
+				35ABAF442875C5B300948C6F /* Frameworks */,
+				35ABAF452875C5B300948C6F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SpotifyLoginSampleApp;
+			name = CreditCardList;
 			packageProductDependencies = (
-				352712812871B8AC003110B8 /* FirebaseAuth */,
-				355DB01F2873207F0009D933 /* GoogleSignIn */,
+				35ABAF672875CB8F00948C6F /* Kingfisher */,
+				35ABAF6C2875CD8200948C6F /* Lottie */,
 			);
-			productName = SpotifyLoginSampleApp;
-			productReference = 3536806D287180A0004FA7F4 /* SpotifyLoginSampleApp.app */;
+			productName = CreditCardList;
+			productReference = 35ABAF472875C5B300948C6F /* CreditCardList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		35368065287180A0004FA7F4 /* Project object */ = {
+		35ABAF3F2875C5B300948C6F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					3536806C287180A0004FA7F4 = {
+					35ABAF462875C5B300948C6F = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 35368068287180A0004FA7F4 /* Build configuration list for PBXProject "SpotifyLoginSampleApp" */;
+			buildConfigurationList = 35ABAF422875C5B300948C6F /* Build configuration list for PBXProject "CreditCardList" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,62 +136,65 @@
 				en,
 				Base,
 			);
-			mainGroup = 35368064287180A0004FA7F4;
+			mainGroup = 35ABAF3E2875C5B300948C6F;
 			packageReferences = (
-				352712802871B8AC003110B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				355FDD1A28731F9100207911 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				35ABAF662875CB8F00948C6F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				35ABAF6B2875CD8200948C6F /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
-			productRefGroup = 3536806E287180A0004FA7F4 /* Products */;
+			productRefGroup = 35ABAF482875C5B300948C6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3536806C287180A0004FA7F4 /* SpotifyLoginSampleApp */,
+				35ABAF462875C5B300948C6F /* CreditCardList */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3536806B287180A0004FA7F4 /* Resources */ = {
+		35ABAF452875C5B300948C6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3536807D287180A4004FA7F4 /* LaunchScreen.storyboard in Resources */,
-				3536807A287180A4004FA7F4 /* Assets.xcassets in Resources */,
-				3527127F2871B778003110B8 /* GoogleService-Info.plist in Resources */,
-				35368078287180A0004FA7F4 /* Main.storyboard in Resources */,
+				35ABAF572875C5B500948C6F /* LaunchScreen.storyboard in Resources */,
+				35ABAF542875C5B500948C6F /* Assets.xcassets in Resources */,
+				355368622875CE3000B100B4 /* money.json in Resources */,
+				35ABAF522875C5B300948C6F /* Main.storyboard in Resources */,
+				35ABAF652875C76C00948C6F /* CardListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		35368069287180A0004FA7F4 /* Sources */ = {
+		35ABAF432875C5B300948C6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3536808528718100004FA7F4 /* LoginViewController.swift in Sources */,
-				35368071287180A0004FA7F4 /* AppDelegate.swift in Sources */,
-				35368087287189D9004FA7F4 /* EnterEmailViewController.swift in Sources */,
-				35368073287180A0004FA7F4 /* SceneDelegate.swift in Sources */,
-				3536808928718ED8004FA7F4 /* MainViewController.swift in Sources */,
+				35ABAF5F2875C5CA00948C6F /* CardListViewController.swift in Sources */,
+				35ABAF612875C6B900948C6F /* CreditCard.swift in Sources */,
+				35ABAF4F2875C5B300948C6F /* ViewController.swift in Sources */,
+				35ABAF642875C76C00948C6F /* CardListCell.swift in Sources */,
+				35ABAF4B2875C5B300948C6F /* AppDelegate.swift in Sources */,
+				35ABAF4D2875C5B300948C6F /* SceneDelegate.swift in Sources */,
+				35ABAF6A2875CC0E00948C6F /* CardDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		35368076287180A0004FA7F4 /* Main.storyboard */ = {
+		35ABAF502875C5B300948C6F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				35368077287180A0004FA7F4 /* Base */,
+				35ABAF512875C5B300948C6F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3536807B287180A4004FA7F4 /* LaunchScreen.storyboard */ = {
+		35ABAF552875C5B500948C6F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3536807C287180A4004FA7F4 /* Base */,
+				35ABAF562875C5B500948C6F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -200,7 +202,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3536807F287180A4004FA7F4 /* Debug */ = {
+		35ABAF592875C5B500948C6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,7 +262,7 @@
 			};
 			name = Debug;
 		};
-		35368080287180A4004FA7F4 /* Release */ = {
+		35ABAF5A2875C5B500948C6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -314,17 +316,16 @@
 			};
 			name = Release;
 		};
-		35368082287180A4004FA7F4 /* Debug */ = {
+		35ABAF5C2875C5B500948C6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SpotifyLoginSampleApp/SpotifyLoginSampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RMSZ82KT4D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpotifyLoginSampleApp/Info.plist;
+				INFOPLIST_FILE = CreditCardList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,7 +336,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.IOS-Study.SpotifyLoginSampleApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.IOS-Study.CreditCardList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -343,17 +344,16 @@
 			};
 			name = Debug;
 		};
-		35368083287180A4004FA7F4 /* Release */ = {
+		35ABAF5D2875C5B500948C6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SpotifyLoginSampleApp/SpotifyLoginSampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RMSZ82KT4D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpotifyLoginSampleApp/Info.plist;
+				INFOPLIST_FILE = CreditCardList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -364,7 +364,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.IOS-Study.SpotifyLoginSampleApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.IOS-Study.CreditCardList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -375,20 +375,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		35368068287180A0004FA7F4 /* Build configuration list for PBXProject "SpotifyLoginSampleApp" */ = {
+		35ABAF422875C5B300948C6F /* Build configuration list for PBXProject "CreditCardList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3536807F287180A4004FA7F4 /* Debug */,
-				35368080287180A4004FA7F4 /* Release */,
+				35ABAF592875C5B500948C6F /* Debug */,
+				35ABAF5A2875C5B500948C6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35368081287180A4004FA7F4 /* Build configuration list for PBXNativeTarget "SpotifyLoginSampleApp" */ = {
+		35ABAF5B2875C5B500948C6F /* Build configuration list for PBXNativeTarget "CreditCardList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				35368082287180A4004FA7F4 /* Debug */,
-				35368083287180A4004FA7F4 /* Release */,
+				35ABAF5C2875C5B500948C6F /* Debug */,
+				35ABAF5D2875C5B500948C6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -396,36 +396,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		352712802871B8AC003110B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		35ABAF662875CB8F00948C6F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 7.0.0;
 			};
 		};
-		355FDD1A28731F9100207911 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+		35ABAF6B2875CD8200948C6F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		352712812871B8AC003110B8 /* FirebaseAuth */ = {
+		35ABAF672875CB8F00948C6F /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 352712802871B8AC003110B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
+			package = 35ABAF662875CB8F00948C6F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
-		355DB01F2873207F0009D933 /* GoogleSignIn */ = {
+		35ABAF6C2875CD8200948C6F /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 355FDD1A28731F9100207911 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignIn;
+			package = 35ABAF6B2875CD8200948C6F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 35368065287180A0004FA7F4 /* Project object */;
+	rootObject = 35ABAF3F2875C5B300948C6F /* Project object */;
 }
