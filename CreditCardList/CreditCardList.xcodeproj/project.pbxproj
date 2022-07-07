@@ -38,6 +38,7 @@
 		35ABAF622875C76C00948C6F /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
 		35ABAF632875C76C00948C6F /* CardListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListCell.xib; sourceTree = "<group>"; };
 		35ABAF692875CC0E00948C6F /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		35BE5ECA2877056100029297 /* CreditCardList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CreditCardList.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 		35ABAF492875C5B300948C6F /* CreditCardList */ = {
 			isa = PBXGroup;
 			children = (
+				35BE5ECA2877056100029297 /* CreditCardList.entitlements */,
 				355368612875CE2F00B100B4 /* money.json */,
 				35ABAF5E2875C5CA00948C6F /* CardListViewController.swift */,
 				35ABAF692875CC0E00948C6F /* CardDetailViewController.swift */,
@@ -321,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CreditCardList/CreditCardList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RMSZ82KT4D;
@@ -349,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CreditCardList/CreditCardList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RMSZ82KT4D;
