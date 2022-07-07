@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		355368622875CE3000B100B4 /* money.json in Resources */ = {isa = PBXBuildFile; fileRef = 355368612875CE2F00B100B4 /* money.json */; };
+		35AB5E7828771A700095CD1C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 35AB5E7728771A700095CD1C /* FirebaseDatabase */; };
 		35ABAF4B2875C5B300948C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF4A2875C5B300948C6F /* AppDelegate.swift */; };
 		35ABAF4D2875C5B300948C6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF4C2875C5B300948C6F /* SceneDelegate.swift */; };
 		35ABAF4F2875C5B300948C6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF4E2875C5B300948C6F /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		35ABAF682875CB8F00948C6F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 35ABAF672875CB8F00948C6F /* Kingfisher */; };
 		35ABAF6A2875CC0E00948C6F /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF692875CC0E00948C6F /* CardDetailViewController.swift */; };
 		35ABAF6D2875CD8200948C6F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 35ABAF6C2875CD8200948C6F /* Lottie */; };
+		35FDA711287717FA004A98F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FDA710287717FA004A98F9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,7 @@
 		35ABAF632875C76C00948C6F /* CardListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListCell.xib; sourceTree = "<group>"; };
 		35ABAF692875CC0E00948C6F /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		35BE5ECA2877056100029297 /* CreditCardList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CreditCardList.entitlements; sourceTree = "<group>"; };
+		35FDA710287717FA004A98F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AB5E7828771A700095CD1C /* FirebaseDatabase in Frameworks */,
 				35ABAF682875CB8F00948C6F /* Kingfisher in Frameworks */,
 				35ABAF6D2875CD8200948C6F /* Lottie in Frameworks */,
 			);
@@ -73,6 +77,7 @@
 		35ABAF492875C5B300948C6F /* CreditCardList */ = {
 			isa = PBXGroup;
 			children = (
+				35FDA710287717FA004A98F9 /* GoogleService-Info.plist */,
 				35BE5ECA2877056100029297 /* CreditCardList.entitlements */,
 				355368612875CE2F00B100B4 /* money.json */,
 				35ABAF5E2875C5CA00948C6F /* CardListViewController.swift */,
@@ -110,6 +115,7 @@
 			packageProductDependencies = (
 				35ABAF672875CB8F00948C6F /* Kingfisher */,
 				35ABAF6C2875CD8200948C6F /* Lottie */,
+				35AB5E7728771A700095CD1C /* FirebaseDatabase */,
 			);
 			productName = CreditCardList;
 			productReference = 35ABAF472875C5B300948C6F /* CreditCardList.app */;
@@ -142,6 +148,7 @@
 			packageReferences = (
 				35ABAF662875CB8F00948C6F /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				35ABAF6B2875CD8200948C6F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				35AB5E7628771A700095CD1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 35ABAF482875C5B300948C6F /* Products */;
 			projectDirPath = "";
@@ -158,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35ABAF572875C5B500948C6F /* LaunchScreen.storyboard in Resources */,
+				35FDA711287717FA004A98F9 /* GoogleService-Info.plist in Resources */,
 				35ABAF542875C5B500948C6F /* Assets.xcassets in Resources */,
 				355368622875CE3000B100B4 /* money.json in Resources */,
 				35ABAF522875C5B300948C6F /* Main.storyboard in Resources */,
@@ -400,6 +408,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		35AB5E7628771A700095CD1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		35ABAF662875CB8F00948C6F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -419,6 +435,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		35AB5E7728771A700095CD1C /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35AB5E7628771A700095CD1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
 		35ABAF672875CB8F00948C6F /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 35ABAF662875CB8F00948C6F /* XCRemoteSwiftPackageReference "Kingfisher" */;

@@ -7,10 +7,11 @@
 
 import UIKit
 import Kingfisher
+import FirebaseDatabase
 
 
 class CardListViewController: UITableViewController {
-    
+    var ref: DatabaseReference! //Firebase Realtime Database
     var creditCardList: [CreditCard] = []
     
     override func viewDidLoad() {
@@ -18,6 +19,26 @@ class CardListViewController: UITableViewController {
         
         let nibName = UINib(nibName: "CardListCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "CardListCell")
+        
+        ref = Database.database(url: "https://creditcard-list-3dfb8-default-rtdb.asia-southeast1.firebasedatabase.app").reference()
+        
+        ref.observe(.value) { [weak self] snapshot in
+            guard let value = snapshot.value as? [String: [String: Any]] else { return }
+            do {
+                let jsonData = try JSONSerialization.data(withJSONObject: value)
+                let cardData = try JSONDecoder().decode([String: CreditCard].self, from: jsonData)
+                let cardList = Array(cardData.values)
+                self?.creditCardList = cardList.sorted{ $0.rank < $1.rank }
+                
+                DispatchQueue.main.async {
+                    self?.tableView.reloadData()
+                }
+                
+            }catch let error {
+                print("ERROR JSON parsing \(error.localizedDescription)")
+            }
+            
+        }
         
     }
     
@@ -29,7 +50,7 @@ class CardListViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CardListCell", for: indexPath) as? CardListCell else { return UITableViewCell() }
         
         cell.rankLabel.text = "\(self.creditCardList[indexPath.row].rank)위"
-        cell.promotionLabel.text = "\(self.creditCardList[indexPath.row].promotionDetail)만원 증정"
+        cell.promotionLabel.text = "\(self.creditCardList[indexPath.row].promotionDetail.amount)만원 증정"
         cell.cardNameLabel.text = "\(self.creditCardList[indexPath.row].name)"
         
         let imageURL = URL(string: creditCardList[indexPath.row].cardImageURL)
