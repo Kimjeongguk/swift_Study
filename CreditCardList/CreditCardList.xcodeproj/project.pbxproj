@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		355368622875CE3000B100B4 /* money.json in Resources */ = {isa = PBXBuildFile; fileRef = 355368612875CE2F00B100B4 /* money.json */; };
 		35AB5E7828771A700095CD1C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 35AB5E7728771A700095CD1C /* FirebaseDatabase */; };
+		35AB5E7B287C567C0095CD1C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 35AB5E7A287C567C0095CD1C /* FirebaseFirestore */; };
+		35AB5E7D287C567C0095CD1C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 35AB5E7C287C567C0095CD1C /* FirebaseFirestoreSwift */; };
+		35AB5E7F287C57DC0095CD1C /* CreditCardDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB5E7E287C57DC0095CD1C /* CreditCardDummy.swift */; };
 		35ABAF4B2875C5B300948C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF4A2875C5B300948C6F /* AppDelegate.swift */; };
 		35ABAF4D2875C5B300948C6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF4C2875C5B300948C6F /* SceneDelegate.swift */; };
 		35ABAF4F2875C5B300948C6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ABAF4E2875C5B300948C6F /* ViewController.swift */; };
@@ -27,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		355368612875CE2F00B100B4 /* money.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = money.json; sourceTree = "<group>"; };
+		35AB5E7E287C57DC0095CD1C /* CreditCardDummy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardDummy.swift; sourceTree = "<group>"; };
 		35ABAF472875C5B300948C6F /* CreditCardList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35ABAF4A2875C5B300948C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35ABAF4C2875C5B300948C6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AB5E7D287C567C0095CD1C /* FirebaseFirestoreSwift in Frameworks */,
 				35AB5E7828771A700095CD1C /* FirebaseDatabase in Frameworks */,
+				35AB5E7B287C567C0095CD1C /* FirebaseFirestore in Frameworks */,
 				35ABAF682875CB8F00948C6F /* Kingfisher in Frameworks */,
 				35ABAF6D2875CD8200948C6F /* Lottie in Frameworks */,
 			);
@@ -80,6 +86,7 @@
 				35FDA710287717FA004A98F9 /* GoogleService-Info.plist */,
 				35BE5ECA2877056100029297 /* CreditCardList.entitlements */,
 				355368612875CE2F00B100B4 /* money.json */,
+				35AB5E7E287C57DC0095CD1C /* CreditCardDummy.swift */,
 				35ABAF5E2875C5CA00948C6F /* CardListViewController.swift */,
 				35ABAF692875CC0E00948C6F /* CardDetailViewController.swift */,
 				35ABAF4A2875C5B300948C6F /* AppDelegate.swift */,
@@ -116,6 +123,8 @@
 				35ABAF672875CB8F00948C6F /* Kingfisher */,
 				35ABAF6C2875CD8200948C6F /* Lottie */,
 				35AB5E7728771A700095CD1C /* FirebaseDatabase */,
+				35AB5E7A287C567C0095CD1C /* FirebaseFirestore */,
+				35AB5E7C287C567C0095CD1C /* FirebaseFirestoreSwift */,
 			);
 			productName = CreditCardList;
 			productReference = 35ABAF472875C5B300948C6F /* CreditCardList.app */;
@@ -149,6 +158,7 @@
 				35ABAF662875CB8F00948C6F /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				35ABAF6B2875CD8200948C6F /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				35AB5E7628771A700095CD1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				35AB5E79287C567C0095CD1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 35ABAF482875C5B300948C6F /* Products */;
 			projectDirPath = "";
@@ -181,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35ABAF5F2875C5CA00948C6F /* CardListViewController.swift in Sources */,
+				35AB5E7F287C57DC0095CD1C /* CreditCardDummy.swift in Sources */,
 				35ABAF612875C6B900948C6F /* CreditCard.swift in Sources */,
 				35ABAF4F2875C5B300948C6F /* ViewController.swift in Sources */,
 				35ABAF642875C76C00948C6F /* CardListCell.swift in Sources */,
@@ -416,6 +427,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		35AB5E79287C567C0095CD1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		35ABAF662875CB8F00948C6F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -439,6 +458,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 35AB5E7628771A700095CD1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		35AB5E7A287C567C0095CD1C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35AB5E7628771A700095CD1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		35AB5E7C287C567C0095CD1C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35AB5E7628771A700095CD1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 		35ABAF672875CB8F00948C6F /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;

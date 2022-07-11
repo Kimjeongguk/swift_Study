@@ -26,7 +26,7 @@
                                     <constraint firstAttribute="height" constant="40" id="XBn-M7-6K6"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="UsF-rU-tad">
+                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="CardListCell" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="UsF-rU-tad">
                                 <rect key="frame" x="80" y="17" width="265" height="46"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="S7q-uO-mwW">
@@ -67,6 +67,10 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="UsF-rU-tad" firstAttribute="top" secondItem="m8P-zy-TLs" secondAttribute="top" constant="17" id="1F4-kT-S32"/>
+                            <constraint firstAttribute="bottom" secondItem="UsF-rU-tad" secondAttribute="bottom" constant="17" id="PVc-Hz-Pxl"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
