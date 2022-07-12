@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "공지사항"; ObjectID = "OJN-LC-K5D"; */
+"OJN-LC-K5D.text" = "공지사항";
+
+/* Class = "UILabel"; text = "참고 일시"; ObjectID = "P41-uN-zwI"; */
+"P41-uN-zwI.text" = "참고 일시";
+
+/* Class = "UIButton"; normalTitle = "확인"; ObjectID = "VQF-8W-7DR"; */
+"VQF-8W-7DR.normalTitle" = "확인";
+
+/* Class = "UILabel"; text = "서비스 이용에 참고 부탁드립니다"; ObjectID = "WuN-fG-lS3"; */
+"WuN-fG-lS3.text" = "서비스 이용에 참고 부탁드립니다";
+
+/* Class = "UILabel"; text = "2022년 1월 1일(월) 00:00~02:00(2시간)"; ObjectID = "qfO-d0-GNZ"; */
+"qfO-d0-GNZ.text" = "2022년 1월 1일(월) 00:00~02:00(2시간)";
+
+/* Class = "UILabel"; text = "안내드립니다"; ObjectID = "uAV-e8-YQs"; */
+"uAV-e8-YQs.text" = "안내드립니다";
