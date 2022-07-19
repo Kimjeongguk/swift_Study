@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import UserNotifications
 
 class AlertListCell: UITableViewCell {
+    var userNotificationCenter = UNUserNotificationCenter.current()
     @IBOutlet weak var meridiemLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var alertSwitch: UISwitch!
@@ -29,5 +31,11 @@ class AlertListCell: UITableViewCell {
         
         alertList[sender.tag].isOn = sender.isOn
         UserDefaults.standard.set(try? PropertyListEncoder().encode(alertList), forKey: "alertList")
+        
+        if sender.isOn {
+            userNotificationCenter.addNotificationRequest(by: alertList[sender.tag])
+        }else {
+            userNotificationCenter.removePendingNotificationRequests(withIdentifiers: [alertList[sender.tag].id])
+        }
     }
 }

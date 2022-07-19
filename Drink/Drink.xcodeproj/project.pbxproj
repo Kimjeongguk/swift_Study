@@ -13,6 +13,7 @@
 		357421C3288040AF0082E16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357421C2288040AF0082E16F /* Assets.xcassets */; };
 		357421C6288040AF0082E16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 357421C4288040AF0082E16F /* LaunchScreen.storyboard */; };
 		357421CE288040CB0082E16F /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357421CD288040CB0082E16F /* AlertListViewController.swift */; };
+		35C43A092886D5D500585BE9 /* UNNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C43A082886D5D500585BE9 /* UNNotificationCenter.swift */; };
 		35FC1C5728804277002430A5 /* AlertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FC1C5528804277002430A5 /* AlertListCell.swift */; };
 		35FC1C5828804277002430A5 /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35FC1C5628804277002430A5 /* AlertListCell.xib */; };
 		35FC1C5A28804397002430A5 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FC1C5928804397002430A5 /* Alert.swift */; };
@@ -28,6 +29,8 @@
 		357421C5288040AF0082E16F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		357421C7288040AF0082E16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		357421CD288040CB0082E16F /* AlertListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
+		35C43A082886D5D500585BE9 /* UNNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNNotificationCenter.swift; sourceTree = "<group>"; };
+		35C43A0A2886DCC100585BE9 /* Drink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Drink.entitlements; sourceTree = "<group>"; };
 		35FC1C5528804277002430A5 /* AlertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListCell.swift; sourceTree = "<group>"; };
 		35FC1C5628804277002430A5 /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
 		35FC1C5928804397002430A5 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -64,7 +67,9 @@
 		357421B8288040AD0082E16F /* Drink */ = {
 			isa = PBXGroup;
 			children = (
+				35C43A0A2886DCC100585BE9 /* Drink.entitlements */,
 				357421B9288040AD0082E16F /* AppDelegate.swift */,
+				35C43A082886D5D500585BE9 /* UNNotificationCenter.swift */,
 				357421BB288040AD0082E16F /* SceneDelegate.swift */,
 				357421CD288040CB0082E16F /* AlertListViewController.swift */,
 				35FC1C5928804397002430A5 /* Alert.swift */,
@@ -156,6 +161,7 @@
 				35FC1C5728804277002430A5 /* AlertListCell.swift in Sources */,
 				35FC1C5A28804397002430A5 /* Alert.swift in Sources */,
 				357421CE288040CB0082E16F /* AlertListViewController.swift in Sources */,
+				35C43A092886D5D500585BE9 /* UNNotificationCenter.swift in Sources */,
 				35FC1C5C288047D4002430A5 /* AddAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Drink/Drink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RMSZ82KT4D;
@@ -329,6 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Drink/Drink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RMSZ82KT4D;
