@@ -40,7 +40,7 @@ struct ContentDetailView_Previews: PreviewProvider {
     static var previews: some View {
         let item0 = Item(description: "흥미진진, 판타지, 애니메이션, 액션, 멀티캐슽팅", imageName: "poster0")
         Group {
-            ContentDetailView(item: item0) 
+            ContentDetailView(item: item0)
                 .preferredColorScheme(.light)
                 .previewInterfaceOrientation(.portrait)
         }
