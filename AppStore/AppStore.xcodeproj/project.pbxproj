@@ -15,6 +15,11 @@
 		0E3265DD289B8DE20006B429 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3265DC289B8DE20006B429 /* AppViewController.swift */; };
 		0E3265E0289B94000006B429 /* FeatureSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3265DF289B94000006B429 /* FeatureSectionView.swift */; };
 		0E9915AE289BA6A3008BA798 /* FeatureSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9915AD289BA6A3008BA798 /* FeatureSectionCollectionViewCell.swift */; };
+		0ECDD044289CD37E00CFC8F4 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDD043289CD37E00CFC8F4 /* SeparatorView.swift */; };
+		0ECDD046289CD6A200CFC8F4 /* RankingFeatureSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDD045289CD6A200CFC8F4 /* RankingFeatureSectionView.swift */; };
+		0ECDD048289CDEE000CFC8F4 /* RankingFeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDD047289CDEE000CFC8F4 /* RankingFeatureCollectionViewCell.swift */; };
+		0ECDD04A289CEBBC00CFC8F4 /* ExchangeCodeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDD049289CEBBC00CFC8F4 /* ExchangeCodeButtonView.swift */; };
+		0ECDD04C289CF12700CFC8F4 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDD04B289CF12700CFC8F4 /* AppDetailViewController.swift */; };
 		351D8D7F289AA3E800AB3497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351D8D7E289AA3E800AB3497 /* AppDelegate.swift */; };
 		351D8D81289AA3E800AB3497 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351D8D80289AA3E800AB3497 /* SceneDelegate.swift */; };
 		351D8D83289AA3E800AB3497 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351D8D82289AA3E800AB3497 /* TabBarController.swift */; };
@@ -29,6 +34,11 @@
 		0E3265DC289B8DE20006B429 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		0E3265DF289B94000006B429 /* FeatureSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSectionView.swift; sourceTree = "<group>"; };
 		0E9915AD289BA6A3008BA798 /* FeatureSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		0ECDD043289CD37E00CFC8F4 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		0ECDD045289CD6A200CFC8F4 /* RankingFeatureSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingFeatureSectionView.swift; sourceTree = "<group>"; };
+		0ECDD047289CDEE000CFC8F4 /* RankingFeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingFeatureCollectionViewCell.swift; sourceTree = "<group>"; };
+		0ECDD049289CEBBC00CFC8F4 /* ExchangeCodeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCodeButtonView.swift; sourceTree = "<group>"; };
+		0ECDD04B289CF12700CFC8F4 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
 		351D8D7B289AA3E800AB3497 /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		351D8D7E289AA3E800AB3497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		351D8D80289AA3E800AB3497 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +74,7 @@
 				0E3265DE289B8DE90006B429 /* App */,
 				0E3265D5289B57540006B429 /* Today */,
 				351D8D82289AA3E800AB3497 /* TabBarController.swift */,
+				0ECDD04B289CF12700CFC8F4 /* AppDetailViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -84,6 +95,10 @@
 				0E3265DC289B8DE20006B429 /* AppViewController.swift */,
 				0E3265DF289B94000006B429 /* FeatureSectionView.swift */,
 				0E9915AD289BA6A3008BA798 /* FeatureSectionCollectionViewCell.swift */,
+				0ECDD043289CD37E00CFC8F4 /* SeparatorView.swift */,
+				0ECDD045289CD6A200CFC8F4 /* RankingFeatureSectionView.swift */,
+				0ECDD047289CDEE000CFC8F4 /* RankingFeatureCollectionViewCell.swift */,
+				0ECDD049289CEBBC00CFC8F4 /* ExchangeCodeButtonView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -198,12 +213,17 @@
 			files = (
 				0E3265D7289B57650006B429 /* TodayViewController.swift in Sources */,
 				351D8D83289AA3E800AB3497 /* TabBarController.swift in Sources */,
+				0ECDD04A289CEBBC00CFC8F4 /* ExchangeCodeButtonView.swift in Sources */,
 				351D8D7F289AA3E800AB3497 /* AppDelegate.swift in Sources */,
 				0E3265DB289B652B0006B429 /* TodayCollectionHeaderView.swift in Sources */,
+				0ECDD046289CD6A200CFC8F4 /* RankingFeatureSectionView.swift in Sources */,
 				0E3265DD289B8DE20006B429 /* AppViewController.swift in Sources */,
+				0ECDD044289CD37E00CFC8F4 /* SeparatorView.swift in Sources */,
 				0E9915AE289BA6A3008BA798 /* FeatureSectionCollectionViewCell.swift in Sources */,
 				351D8D81289AA3E800AB3497 /* SceneDelegate.swift in Sources */,
 				0E3265D9289B5CB30006B429 /* TodayCollectionViewCell.swift in Sources */,
+				0ECDD04C289CF12700CFC8F4 /* AppDetailViewController.swift in Sources */,
+				0ECDD048289CDEE000CFC8F4 /* RankingFeatureCollectionViewCell.swift in Sources */,
 				0E3265E0289B94000006B429 /* FeatureSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

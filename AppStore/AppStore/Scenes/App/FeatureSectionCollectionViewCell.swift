@@ -43,6 +43,15 @@ final class FeatureSectionCollectionViewCell: UICollectionViewCell {
         
         return imageView
     }()
+    
+    func setup() {
+        setupLayout()
+        
+        typeLabel.text = "type"
+        appNameLabel.text = "App name"
+        descriptionLabel.text = "description"
+        imageView.backgroundColor = .lightGray
+    }
 }
 
 private extension FeatureSectionCollectionViewCell {
