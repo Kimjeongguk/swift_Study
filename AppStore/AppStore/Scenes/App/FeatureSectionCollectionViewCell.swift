@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 final class FeatureSectionCollectionViewCell: UICollectionViewCell {
     private lazy var typeLabel: UILabel = {
@@ -44,13 +45,15 @@ final class FeatureSectionCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
-    func setup() {
+    func setup(feature: Feature) {
         setupLayout()
         
-        typeLabel.text = "type"
-        appNameLabel.text = "App name"
-        descriptionLabel.text = "description"
-        imageView.backgroundColor = .lightGray
+        typeLabel.text = feature.type
+        appNameLabel.text = feature.appName
+        descriptionLabel.text = feature.description
+        if let imageURL = URL(string: feature.imageURL) {
+            imageView.kf.setImage(with: imageURL)
+        }
     }
 }
 

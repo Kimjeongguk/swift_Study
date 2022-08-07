@@ -5,6 +5,7 @@
 //  Created by jeongguk on 2022/08/04.
 //
 
+import Kingfisher
 import SnapKit
 import UIKit
 
@@ -44,7 +45,7 @@ final class TodayCollectionViewCell: UICollectionViewCell{
         return imageView
     }()
     
-    func setup() {
+    func setup(today: Today) {
         
         setupSubViews()
         
@@ -52,9 +53,13 @@ final class TodayCollectionViewCell: UICollectionViewCell{
         layer.shadowOpacity = 0.3
         layer.shadowRadius = 10
         
-        subTitleLabel.text = "subTitle"
-        descriptionLabel.text = "description"
-        titleLabel.text = "AppName"
+        subTitleLabel.text = today.subTitle
+        descriptionLabel.text = today.description
+        titleLabel.text = today.title
+        
+        if let imageURL = URL(string: today.imageURL) {
+            imageView.kf.setImage(with: imageURL)
+        }
     }
 }
 

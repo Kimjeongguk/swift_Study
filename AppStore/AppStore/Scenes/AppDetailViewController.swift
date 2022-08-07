@@ -5,10 +5,11 @@
 //  Created by jeongguk on 2022/08/05.
 //
 
-import UIKit
+import Kingfisher
 import UIKit
 
 final class AppDetailViewController: UIViewController {
+    private let today: Today
     private let appIconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -17,6 +18,16 @@ final class AppDetailViewController: UIViewController {
         
         return imageView
     }()
+    
+    init(today: Today) {
+        self.today = today
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -48,9 +59,11 @@ final class AppDetailViewController: UIViewController {
         let button = UIButton()
         button.setImage(UIImage(systemName: "square.and.arrow.up"), for: .normal)
         button.tintColor = .systemBlue
+        button.addTarget(self, action: #selector(didTapShareButton), for: .touchUpInside)
         
         return button
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,8 +72,12 @@ final class AppDetailViewController: UIViewController {
         setupViews()
         
         appIconImageView.backgroundColor = .lightGray
-        titleLabel.text = "title"
-        subTitleLabel.text = "subTitle"
+        titleLabel.text = today.title
+        subTitleLabel.text = today.subTitle
+        
+        if let imageURL = URL(string: today.imageURL) {
+            appIconImageView.kf.setImage(with: imageURL)
+        }
     }
 }
 
@@ -101,5 +118,11 @@ private extension AppDetailViewController {
             $0.trailing.equalToSuperview().inset(16.0)
             $0.bottom.equalTo(downloadButton.snp.bottom)
         }
+    }
+    
+    @objc func didTapShareButton() {
+        let activityItems: [Any] = [today.title]
+        let activityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        present(activityViewController, animated: true, completion: nil)
     }
 }
