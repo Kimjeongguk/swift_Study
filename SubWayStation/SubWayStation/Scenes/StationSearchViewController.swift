@@ -5,6 +5,7 @@
 //  Created by jeongguk on 2022/08/08.
 //
 
+import Alamofire
 import UIKit
 import SnapKit
 
@@ -22,6 +23,7 @@ class StationSearchViewController: UIViewController {
         
         setNavigationItems()
         setTableViewLayout()
+        requestStationName()
     }
     
     private func setNavigationItems() {
@@ -41,6 +43,17 @@ class StationSearchViewController: UIViewController {
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
+    }
+    
+    private func requestStationName() {
+        let urlString = "http://openapi.seoul.go.kr:8088/sample/json/SearchInfoBySubwayNameService/1/5/서울역"
+        
+        AF.request(urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "").responseDecodable(of: StationResponseModel.self) { response in
+            guard case .success(let data) = response.result else { return }
+            
+            print(data.stations)
+        }
+        .resume()
     }
 
 }

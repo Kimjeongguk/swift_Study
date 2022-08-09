@@ -9,6 +9,18 @@ import UIKit
 import SnapKit
 
 final class StationDetailViewController: UIViewController {
+    private lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(fetchData), for: .valueChanged)
+        
+        return refreshControl
+    }()
+    
+    @objc func fetchData() {
+        print("ReFresh!")
+        refreshControl.endRefreshing()
+    }
+    
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.estimatedItemSize = CGSize(width: view.frame.width - 32.0, height: 100.0)
@@ -17,9 +29,10 @@ final class StationDetailViewController: UIViewController {
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .systemBackground
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "StationDetailCollectionViewCell")
+        collectionView.register(StationDetailCollectionViewCell.self, forCellWithReuseIdentifier: "StationDetailCollectionViewCell")
         
         collectionView.dataSource = self
+        collectionView.refreshControl = refreshControl
         
         return collectionView
     }()
@@ -28,6 +41,11 @@ final class StationDetailViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "잠실"
+        
+        view.addSubview(collectionView)
+        collectionView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
 }
 
@@ -37,6 +55,9 @@ extension StationDetailViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collection
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StationDetailCollectionViewCell", for: indexPath) as? StationDetailCollectionViewCell else { return UICollectionViewCell() }
+        
+        cell.setup()
+        return cell
     }
 }

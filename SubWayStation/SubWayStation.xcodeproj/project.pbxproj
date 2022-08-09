@@ -15,6 +15,8 @@
 		0E40336728A09D570061BC57 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E40336628A09D570061BC57 /* SnapKit */; };
 		0E40336A28A09F7B0061BC57 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0E40336928A09F7B0061BC57 /* Alamofire */; };
 		0E40337528A0D3CE0061BC57 /* StationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40337428A0D3CE0061BC57 /* StationDetailViewController.swift */; };
+		0EBECC7528A2492F004E2CE6 /* StationDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBECC7428A2492F004E2CE6 /* StationDetailCollectionViewCell.swift */; };
+		0EBECC7728A2538E004E2CE6 /* StationResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBECC7628A2538E004E2CE6 /* StationResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		0E40335D28A09CDE0061BC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E40335F28A09CDE0061BC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E40337428A0D3CE0061BC57 /* StationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailViewController.swift; sourceTree = "<group>"; };
+		0EBECC7428A2492F004E2CE6 /* StationDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		0EBECC7628A2538E004E2CE6 /* StationResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			children = (
 				0E40335128A09CDC0061BC57 /* AppDelegate.swift */,
 				0E40335328A09CDC0061BC57 /* SceneDelegate.swift */,
+				0EBECC7628A2538E004E2CE6 /* StationResponseModel.swift */,
 				0E40337628A0D40E0061BC57 /* Scenes */,
 				0E40335A28A09CDE0061BC57 /* Assets.xcassets */,
 				0E40335C28A09CDE0061BC57 /* LaunchScreen.storyboard */,
@@ -75,6 +80,7 @@
 			children = (
 				0E40335528A09CDC0061BC57 /* StationSearchViewController.swift */,
 				0E40337428A0D3CE0061BC57 /* StationDetailViewController.swift */,
+				0EBECC7428A2492F004E2CE6 /* StationDetailCollectionViewCell.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -158,8 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E40335628A09CDC0061BC57 /* StationSearchViewController.swift in Sources */,
+				0EBECC7728A2538E004E2CE6 /* StationResponseModel.swift in Sources */,
 				0E40335228A09CDC0061BC57 /* AppDelegate.swift in Sources */,
 				0E40335428A09CDC0061BC57 /* SceneDelegate.swift in Sources */,
+				0EBECC7528A2492F004E2CE6 /* StationDetailCollectionViewCell.swift in Sources */,
 				0E40337528A0D3CE0061BC57 /* StationDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
