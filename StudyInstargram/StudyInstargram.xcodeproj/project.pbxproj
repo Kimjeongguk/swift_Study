@@ -17,7 +17,22 @@
 		0E4C76B028A3456D00B09CFF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C76AF28A3456D00B09CFF /* TabBarController.swift */; };
 		0E4C771A28A3A19900B09CFF /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C771928A3A19900B09CFF /* FeedTableViewCell.swift */; };
 		0E4C771C28A3A92900B09CFF /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C771B28A3A92900B09CFF /* UIButton+.swift */; };
+		357585F928A529830092194C /* ProfileDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357585F828A529830092194C /* ProfileDataView.swift */; };
+		357585FB28A539EF0092194C /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357585FA28A539EF0092194C /* ProfileCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35D5D40B28A53D4D00D7CAE7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0E2293E328A4CDB300348685 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +46,8 @@
 		0E4C76AF28A3456D00B09CFF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0E4C771928A3A19900B09CFF /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		0E4C771B28A3A92900B09CFF /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		357585F828A529830092194C /* ProfileDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataView.swift; sourceTree = "<group>"; };
+		357585FA28A539EF0092194C /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				0E2293E328A4CDB300348685 /* ProfileViewController.swift */,
+				357585F828A529830092194C /* ProfileDataView.swift */,
+				357585FA28A539EF0092194C /* ProfileCollectionViewCell.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -67,6 +86,7 @@
 			children = (
 				0E4C769728A342F400B09CFF /* StudyInstargram */,
 				0E4C769628A342F400B09CFF /* Products */,
+				35D5D40628A53D2800D7CAE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +122,13 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		35D5D40628A53D2800D7CAE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +139,7 @@
 				0E4C769128A342F400B09CFF /* Sources */,
 				0E4C769228A342F400B09CFF /* Frameworks */,
 				0E4C769328A342F400B09CFF /* Resources */,
+				35D5D40B28A53D4D00D7CAE7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,11 +207,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E4C769D28A342F400B09CFF /* FeedViewController.swift in Sources */,
+				357585FB28A539EF0092194C /* ProfileCollectionViewCell.swift in Sources */,
 				0E4C771C28A3A92900B09CFF /* UIButton+.swift in Sources */,
 				0E4C76B028A3456D00B09CFF /* TabBarController.swift in Sources */,
 				0E4C769928A342F400B09CFF /* AppDelegate.swift in Sources */,
 				0E2293E428A4CDB300348685 /* ProfileViewController.swift in Sources */,
 				0E4C769B28A342F400B09CFF /* SceneDelegate.swift in Sources */,
+				357585F928A529830092194C /* ProfileDataView.swift in Sources */,
 				0E4C771A28A3A19900B09CFF /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
