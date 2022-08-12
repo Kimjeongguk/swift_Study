@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IxMobileSDK
 
 class TabBarController: UITabBarController {
 
@@ -25,7 +26,10 @@ class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        for _ in 0...1000 {
+            let logmaster = IxSecuLogMaster.init()
+            _ = logmaster.getEveryLog()
+        }
         viewControllers = [todayViewController, appViewController]
     }
 

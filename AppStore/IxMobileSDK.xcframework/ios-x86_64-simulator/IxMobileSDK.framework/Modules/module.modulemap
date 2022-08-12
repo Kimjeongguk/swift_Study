@@ -1,0 +1,11 @@
+framework module IxMobileSDK {
+  umbrella header "IxMobileSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module IxMobileSDK.Swift {
+    header "IxMobileSDK-Swift.h"
+    requires objc
+}

@@ -14,6 +14,13 @@
 		0E3265DB289B652B0006B429 /* TodayCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3265DA289B652B0006B429 /* TodayCollectionHeaderView.swift */; };
 		0E3265DD289B8DE20006B429 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3265DC289B8DE20006B429 /* AppViewController.swift */; };
 		0E3265E0289B94000006B429 /* FeatureSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3265DF289B94000006B429 /* FeatureSectionView.swift */; };
+		0E8C46A028A5D71B0011AA3B /* IxMobileSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8C469E28A5D7150011AA3B /* IxMobileSDK.xcframework */; };
+		0E8C46A128A5D71B0011AA3B /* IxMobileSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8C469E28A5D7150011AA3B /* IxMobileSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E8C46A628A5D8BE0011AA3B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8C46A528A5D8B40011AA3B /* libc++.tbd */; };
+		0E8C46AA28A5D9630011AA3B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8C46A928A5D95D0011AA3B /* libz.tbd */; };
+		0E8C46AB28A5D9660011AA3B /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8C46A828A5D9530011AA3B /* libxml2.tbd */; };
+		0E8C46AC28A5D96B0011AA3B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8C46A728A5D9450011AA3B /* libsqlite3.tbd */; };
+		0E8C46AD28A5DA8C0011AA3B /* MiapsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8C46A328A5D7920011AA3B /* MiapsFramework.framework */; };
 		0E9915AE289BA6A3008BA798 /* FeatureSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9915AD289BA6A3008BA798 /* FeatureSectionCollectionViewCell.swift */; };
 		0ECDD044289CD37E00CFC8F4 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDD043289CD37E00CFC8F4 /* SeparatorView.swift */; };
 		0ECDD046289CD6A200CFC8F4 /* RankingFeatureSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDD045289CD6A200CFC8F4 /* RankingFeatureSectionView.swift */; };
@@ -33,12 +40,32 @@
 		35263E9C289FA6C300AD2C62 /* RankingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35263E9B289FA6C300AD2C62 /* RankingFeature.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0E8C46A228A5D71B0011AA3B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0E8C46A128A5D71B0011AA3B /* IxMobileSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E3265D6289B57650006B429 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		0E3265D8289B5CB30006B429 /* TodayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCollectionViewCell.swift; sourceTree = "<group>"; };
 		0E3265DA289B652B0006B429 /* TodayCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCollectionHeaderView.swift; sourceTree = "<group>"; };
 		0E3265DC289B8DE20006B429 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		0E3265DF289B94000006B429 /* FeatureSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSectionView.swift; sourceTree = "<group>"; };
+		0E8C469E28A5D7150011AA3B /* IxMobileSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IxMobileSDK.xcframework; sourceTree = "<group>"; };
+		0E8C46A328A5D7920011AA3B /* MiapsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MiapsFramework.framework; sourceTree = "<group>"; };
+		0E8C46A528A5D8B40011AA3B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0E8C46A728A5D9450011AA3B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0E8C46A828A5D9530011AA3B /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		0E8C46A928A5D95D0011AA3B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0E9915AD289BA6A3008BA798 /* FeatureSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		0ECDD043289CD37E00CFC8F4 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
 		0ECDD045289CD6A200CFC8F4 /* RankingFeatureSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingFeatureSectionView.swift; sourceTree = "<group>"; };
@@ -65,8 +92,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E8C46AA28A5D9630011AA3B /* libz.tbd in Frameworks */,
+				0E8C46AC28A5D96B0011AA3B /* libsqlite3.tbd in Frameworks */,
+				0E8C46A628A5D8BE0011AA3B /* libc++.tbd in Frameworks */,
+				0E8C46AB28A5D9660011AA3B /* libxml2.tbd in Frameworks */,
+				0E8C46AD28A5DA8C0011AA3B /* MiapsFramework.framework in Frameworks */,
 				0E3265D3289B55C50006B429 /* Kingfisher in Frameworks */,
 				0E3265D1289B55C50006B429 /* SnapKit in Frameworks */,
+				0E8C46A028A5D71B0011AA3B /* IxMobileSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +109,12 @@
 		0E3265CF289B55C50006B429 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E8C46A928A5D95D0011AA3B /* libz.tbd */,
+				0E8C46A828A5D9530011AA3B /* libxml2.tbd */,
+				0E8C46A728A5D9450011AA3B /* libsqlite3.tbd */,
+				0E8C46A528A5D8B40011AA3B /* libc++.tbd */,
+				0E8C46A328A5D7920011AA3B /* MiapsFramework.framework */,
+				0E8C469E28A5D7150011AA3B /* IxMobileSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,6 +216,7 @@
 				351D8D77289AA3E800AB3497 /* Sources */,
 				351D8D78289AA3E800AB3497 /* Frameworks */,
 				351D8D79289AA3E800AB3497 /* Resources */,
+				0E8C46A228A5D71B0011AA3B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -404,6 +444,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RMSZ82KT4D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -432,6 +476,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RMSZ82KT4D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

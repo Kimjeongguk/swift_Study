@@ -17,6 +17,7 @@
 		0E4C76B028A3456D00B09CFF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C76AF28A3456D00B09CFF /* TabBarController.swift */; };
 		0E4C771A28A3A19900B09CFF /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C771928A3A19900B09CFF /* FeedTableViewCell.swift */; };
 		0E4C771C28A3A92900B09CFF /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C771B28A3A92900B09CFF /* UIButton+.swift */; };
+		0E837AA628A622780038497B /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E837AA528A622780038497B /* UploadViewController.swift */; };
 		357585F928A529830092194C /* ProfileDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357585F828A529830092194C /* ProfileDataView.swift */; };
 		357585FB28A539EF0092194C /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357585FA28A539EF0092194C /* ProfileCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		0E4C76AF28A3456D00B09CFF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0E4C771928A3A19900B09CFF /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		0E4C771B28A3A92900B09CFF /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		0E837AA528A622780038497B /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		357585F828A529830092194C /* ProfileDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataView.swift; sourceTree = "<group>"; };
 		357585FA28A539EF0092194C /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 			children = (
 				0E4C769C28A342F400B09CFF /* FeedViewController.swift */,
 				0E4C771928A3A19900B09CFF /* FeedTableViewCell.swift */,
+				0E837AA528A622780038497B /* UploadViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E4C769D28A342F400B09CFF /* FeedViewController.swift in Sources */,
+				0E837AA628A622780038497B /* UploadViewController.swift in Sources */,
 				357585FB28A539EF0092194C /* ProfileCollectionViewCell.swift in Sources */,
 				0E4C771C28A3A92900B09CFF /* UIButton+.swift in Sources */,
 				0E4C76B028A3456D00B09CFF /* TabBarController.swift in Sources */,
@@ -356,6 +360,8 @@
 				DEVELOPMENT_TEAM = RMSZ82KT4D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StudyInstargram/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "사진추가를 위해 권한이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사진추가를 위해 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -384,6 +390,8 @@
 				DEVELOPMENT_TEAM = RMSZ82KT4D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StudyInstargram/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "사진추가를 위해 권한이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사진추가를 위해 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";

@@ -1,0 +1,403 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IxMobileSDK
+import AVFoundation
+import CFNetwork
+import CallKit
+import CommonCrypto
+import CoreTelephony
+import Foundation
+@_exported import IxMobileSDK
+import Security
+import Swift
+import SystemConfiguration
+import UIKit
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @objcMembers public class IxConfigureInputItem : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc override dynamic public init()
+  @objc public init(textInput: UIKit.UITextField, inputType: IxMobileSDK.KEYPAD_TYPE)
+  @objc public init(textInput: UIKit.UITextField, inputType: IxMobileSDK.KEYPAD_TYPE, shuffleType: IxMobileSDK.SHUFFLE_TYPE)
+  @objc public init(inputType: IxMobileSDK.KEYPAD_TYPE, shuffleType: IxMobileSDK.SHUFFLE_TYPE)
+  @objc public func setMinLength(min: Swift.Int)
+  @objc public func setMaxLength(max: Swift.Int)
+  @objc public func setInputPolicy(policy: Swift.Int)
+  public func setInputPolicy(policy: [IxMobileSDK.CHECKRULE])
+  @objc public func setMixedPattern(pattern: Swift.String)
+  @objc public func setPrefixName(prefix: Swift.String)
+  @objc public func setConfigureKeypad(configKeypad: IxMobileSDK.IxConfigureKeypad)
+  @objc public func setKeyBgColor(bgColor: IxMobileSDK.IxKeypadColors)
+  @objc public func setKeyPadBgColor(padBgColor: Swift.String)
+  @objc public func setKeyBgDarkColor(color: IxMobileSDK.IxKeypadColors)
+  @objc public func setKeyPadBgDarkColor(color: Swift.String)
+  @objc public func setShowAnimation(timeInterval: CoreGraphics.CGFloat, repeat repeatValue: CoreGraphics.CGFloat)
+  @objc public func setHideAnimation(timeInterval: CoreGraphics.CGFloat, repeat repeatValue: CoreGraphics.CGFloat)
+  @objc public func setQwertyAccKeyCode(upperCase: [[Swift.String]], lowerCase: [[Swift.String]], special: [[Swift.String]], langType: IxMobileSDK.ACC_LANG_TYPE = ACC_LANG_TYPE.kACC_LANG_KOR)
+  @objc public func setNumberAccKeyCode(numberCase: [[Swift.String]], langType: IxMobileSDK.ACC_LANG_TYPE = ACC_LANG_TYPE.kACC_LANG_KOR)
+  @objc public func setEnableSecureAccesibility(enable: Swift.Bool)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc public func enableGapResources(gapImg: Swift.Bool = true, background: Swift.Bool = true)
+  @objc deinit
+}
+public enum ixErrCode : Swift.Int {
+  case eE2E_Success
+  case eE2E_Err
+  case eE2E_npCrypto_Load_Err
+  case eE2E_npCrypto_Init_Err
+  case eE2E_npCrypto_Err
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol KeypadEventListener {
+  @objc func onChangeInputBox(inputBox: UIKit.UITextField)
+  @objc func onInputViolationOccurred(errorCode: IxMobileSDK.CHECKRULE)
+  @objc func onInputChanged(inputBox: UIKit.UITextField, count: Swift.Int)
+  @objc func onInitializing(isOnLoading: Swift.Bool)
+  @objc func onKeypadCreate()
+  @objc func onKeypadFinish()
+  @objc func onKeypadFinish(resultCode: IxMobileSDK.RESULT)
+}
+@objc public enum COLLECT_COMMAND : Swift.Int {
+  case kCMD_GET_UUID = 0x300
+  case kCMD_GET_OS_VERSION
+  case kCMD_GET_DEVICE_MODEL
+  case kCMD_GET_CARRIER_NAME
+  case kCMD_GET_MCC
+  case kCMD_GET_MNC
+  case kCMD_GET_CALL_STATE
+  case kCMD_GET_NETWORK_INFO
+  case kCMD_GET_MAC_ADDRESS
+  case kCMD_GET_IS_JAILBROKEN
+  case kCMD_GET_SOFTWARE_INFO
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum FORMAT_TYPE : Swift.Int {
+  case tSTRING = 0
+  case tJSON
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class IxSecuLogMaster : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func setCheckApp(packageName appPackageName: Swift.String?)
+  @objc public func setServerKey(_ serverKey: Swift.String) -> Swift.Bool
+  @objc public func enableNatIp(enable: Swift.Bool)
+  @objc public func enableVpnInfo(enable: Swift.Bool)
+  @objc public func getLogData(nLogIndex: IxMobileSDK.COLLECT_COMMAND) -> Swift.String?
+  @objc public func getLogDataForObjc(command: Swift.Int) -> Swift.String?
+  @objc public func getAllLogs() -> Swift.Dictionary<Swift.String, Swift.String>
+  @objc public func probeDeviceInfo()
+  @objc public func getBuiltKey() -> Swift.String?
+  @objc public func getEveryLog() -> Swift.String?
+  @objc public func getEveryLogWithformat(formatType: IxMobileSDK.FORMAT_TYPE) -> Swift.String?
+  @objc public func getEveryLogByString() -> Swift.String?
+  @objc public func getEveryLogByDictionary() -> Swift.Dictionary<Swift.String, Swift.String>
+  @objc public func getVersionString() -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class IxSystemUtils {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ToastUtils {
+  public static func showToast(uiviewController: UIKit.UIViewController, message: Swift.String)
+  public static func showToast(uiviewController: UIKit.UIViewController, message: Swift.String, duration: Swift.Float)
+  public static func showToast(uiviewController: UIKit.UIViewController, message: Swift.String, duration: Swift.Float, delay: Swift.Float)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class IxResultItem : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func isEmpty() -> Swift.Bool
+  @objc public func getKey() -> Swift.String
+  @objc public func getEncData() -> Swift.String
+  @objc public func getLength() -> Swift.Int
+  @objc public func getMasterKey() -> [Swift.UInt8]?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IxKeypadColors : ObjectiveC.NSObject {
+  @objc public var numPadNumKey: Swift.String?
+  @objc public var numPadFuncKey: Swift.String?
+  @objc public var numPadNumKeyPush: Swift.String?
+  @objc public var numPadFuncKeyPush: Swift.String?
+  @objc public var qwertyPadNumKey: Swift.String?
+  @objc public var qwertyPadEngKey: Swift.String?
+  @objc public var qwertyPadFuncKey: Swift.String?
+  @objc public var qwertyPadNumKeyPush: Swift.String?
+  @objc public var qwertyPadEngKeyPush: Swift.String?
+  @objc public var qwertyPadFuncKeyPush: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum KEYPAD_TYPE : Swift.Int {
+  case KEYPAD_TYPE_QWERTY = 0
+  case KEYPAD_TYPE_NUMBER
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum SHUFFLE_TYPE : Swift.Int {
+  case SHUFFLE_TYPE_EXTEND = 0
+  case SHUFFLE_TYPE_GAPKEY
+  case SHUFFLE_TYPE_MARGIN
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum FUNC_KEY : Swift.Int {
+  case none = 0
+  case done
+  case cancel
+  case hide
+  case delete
+  case remap
+  case shift
+  case mode
+  case space
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum CHECKRULE : Swift.Int {
+  case NONE = 0x0000
+  case ALLOW_NUMBER = 0x0001
+  case ALLOW_ALPHABET = 0x0002
+  case ALLOW_SPECIAL = 0x0004
+  case POLICY_DUPLICATED_2CHAR = 0x0008
+  case POLICY_DUPLICATED_3CHAR = 0x0010
+  case POLICY_CONTINUOUS_3CHAR = 0x0020
+  case POLICY_CONTINUOUS_4CHAR = 0x0040
+  case HAS_NUMBER = 0x0080
+  case HAS_ALPHABET = 0x0100
+  case HAS_ALPHABET_LOW = 0x0200
+  case HAS_ALPHABET_UPPER = 0x0400
+  case HAS_SPECIAL = 0x0800
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum RESULT : Swift.Int {
+  case NONE = 0
+  case OK
+  case CANCEL
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum VIBRATION : Swift.Int {
+  case none = 0
+  case mode_default
+  case mode_haptic
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum ACC_LANG_TYPE : Swift.Int {
+  case kACC_LANG_ENG = 0
+  case kACC_LANG_KOR
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class IxKeypadManageHelper : ObjectiveC.NSObject {
+  @objc public func getMajorVersion() -> Swift.String
+  @objc public func getVersion() -> Swift.Int
+  @objc public func getVersionString() -> Swift.String
+  @objc override dynamic public init()
+  @objc convenience public init(viewController: UIKit.UIViewController)
+  @objc public func configureInputBox(config: IxMobileSDK.IxConfigureInputItem)
+  @objc public func configurationInputBoxs(configs: [IxMobileSDK.IxConfigureInputItem])
+  @objc public func configureInputBoxAndStart(inputBox: UIKit.UITextField, config: IxMobileSDK.IxConfigureInputItem)
+  @objc public func startSecureKeypad(config: IxMobileSDK.IxConfigureInputItem)
+  @objc public func startSecureKeypad(inputBox: UIKit.UITextField)
+  @objc public func setServerKey(serverKey: Swift.String) throws
+  @objc public func getInputResults() -> [IxMobileSDK.IxResultItem]?
+  @objc public func onEnterNormalInputBox(inputBox: UIKit.UITextField)
+  @objc public func getFocusedInputBoxIndex() -> Swift.Int
+  @objc public func finish()
+  @objc public func setKeypadEventListener(delegate: IxMobileSDK.KeypadEventListener)
+  public func validateInputs(inputBox: UIKit.UITextField, patterns: [Swift.String]) -> Swift.Int?
+  public func compare(inputBox1: UIKit.UITextField, inputBox2: UIKit.UITextField) -> Swift.Int?
+  @objc public func repackResultWithServerKey(inputBox: UIKit.UITextField, serverKey: Swift.String) -> IxMobileSDK.IxResultItem?
+  @objc public func repackResultWithServerKey(serverKey: Swift.String) -> [IxMobileSDK.IxResultItem]?
+  @objc public func repackResultWithServerKey(plainText: Swift.String, serverKey: Swift.String) -> IxMobileSDK.IxResultItem?
+  @objc public func moveToPrevInputBox() -> UIKit.UITextField?
+  @objc public func moveToNextInputBox() -> UIKit.UITextField?
+  @objc public func setExtraToolbar(toolbar: UIKit.UIView)
+  @objc public func getRealText(inputBox: UIKit.UITextField) -> [Swift.UInt8]?
+  @objc public func checkInputTypePolicy(inputBox: UIKit.UITextField) -> Swift.Bool
+  @objc public func setVibrationMode(mode: IxMobileSDK.VIBRATION)
+  @objc public func clearInputResult(index: Swift.Int)
+  @objc public func setAutoFocusMove(enable: Swift.Bool)
+  @objc public func setAutoHidden(enable: Swift.Bool)
+  @objc public func setEnterFocusMove(enable: Swift.Bool)
+  @objc public func setShiftLock(enable: Swift.Bool)
+  @objc public func setNormalTextField(textFields: [UIKit.UITextField])
+  @objc public func setIndicator(enable: Swift.Bool)
+  @objc public func setViewController(viewController: UIKit.UIViewController)
+  @objc public func setDefaultConfig(configs: [IxMobileSDK.IxConfigureInputItem])
+  @objc public func setSecureTextField(prefix: Swift.String = "zix", textFields: [UIKit.UITextField])
+  public func setSecureTextFieldOptions(textField: UIKit.UITextField, min: Swift.Int? = nil, max: Swift.Int? = nil, pattern: Swift.String? = nil, policy: [IxMobileSDK.CHECKRULE]? = nil)
+  @objc public func setSecureTextFieldOptionsForObjc(textField: UIKit.UITextField, min: Swift.Int, max: Swift.Int, pattern: Swift.String, policy: Swift.Int)
+  @objc public func deInitialize()
+  @objc public func createHiddenTextField() -> UIKit.UITextField
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class IxSecureManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func initLicense(licenseKey: Swift.String, customerID: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+@objc @objcMembers public class IxConfigureKeypad : ObjectiveC.NSObject {
+  @objc public init(type: IxMobileSDK.KEYPAD_TYPE)
+  @objc public init(type: IxMobileSDK.KEYPAD_TYPE, keySet: [[Any]])
+  @objc public func setKeypadFuncKeys(keySet: [[Any]])
+  @objc public func setKeypadFuncKeys(keys: [Swift.Int], weights: [Swift.Int]) -> Swift.Bool
+  @objc public func setQwertyKeypadShiftDelFuncKeys(keySet: [[Any]])
+  @objc public func setQwertyKeypadShiftDelFuncKeys(keys: [Swift.Int], weights: [Swift.Int]) -> Swift.Bool
+  @objc public func setKeypadMargin(top: CoreGraphics.CGFloat, left: CoreGraphics.CGFloat, bottom: CoreGraphics.CGFloat, right: CoreGraphics.CGFloat)
+  @objc public func setKeyMargin(width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat)
+  @objc public func setKeyRate(width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat)
+  @objc public func setQwertyKeypadFuncKeyImg(remap: Swift.String = "zix_btn_gray_normal.9", remap_push: Swift.String = "zix_btn_gray_push.9", toggle_txt: Swift.String = "zix_btn_gray_normal.9", toggle_txt_push: Swift.String = "zix_btn_gray_push.9", toggle_special: Swift.String = "zix_btn_gray_normal.9", toggle_special_push: Swift.String = "zix_btn_gray_push.9", space: Swift.String = "zix_btn_gray_normal.9", space_push: Swift.String = "zix_btn_gray_push.9", done: Swift.String = "zix_btn_gray_normal.9", done_push: Swift.String = "zix_btn_gray_push.9", cancel: Swift.String = "zix_btn_gray_normal.9", cancel_push: Swift.String = "zix_btn_gray_push.9", hide: Swift.String = "zix_btn_gray_normal.9", hide_push: Swift.String = "zix_btn_gray_push.9")
+  @objc public func setQwertyKeypadShiftDelImg(shift_normal: Swift.String = "zix_btn_gray_normal.9", shift_normal_push: Swift.String = "zix_btn_gray_push.9", shift_capital: Swift.String = "zix_btn_black_normal.9", shift_capital_push: Swift.String = "zix_btn_black_push.9", delete: Swift.String = "zix_btn_gray_normal.9", delete_push: Swift.String = "zix_btn_gray_push.9")
+  @objc public func setNumberKeypadFuncKeyImg(type: IxMobileSDK.SHUFFLE_TYPE, remap: Swift.String = "zix_num_btn_black", remap_push: Swift.String = "zix_num_btn_black_push", delete: Swift.String = "zix_num_btn_black", delete_push: Swift.String = "zix_num_btn_black_push", done: Swift.String = "zix_num_btn_black", done_push: Swift.String = "zix_num_btn_black_push", cancel: Swift.String = "zix_num_btn_black", cancel_push: Swift.String = "zix_num_btn_black_push", none: Swift.String = "zix_num_btn_black")
+  @objc deinit
+}
+public enum IxReachabilityError : Swift.Error {
+  case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
+  case failedToCreateWithHostname(Swift.String, Swift.Int32)
+  case unableToSetCallback(Swift.Int32)
+  case unableToSetDispatchQueue(Swift.Int32)
+  case unableToGetFlags(Swift.Int32)
+}
+@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
+public let IxReachabilityChangedNotification: Foundation.NSNotification.Name
+extension Foundation.NSNotification.Name {
+  public static let reachabilityChanged: Foundation.Notification.Name
+}
+public class IxReachability {
+  public typealias NetworkReachable = (IxMobileSDK.IxReachability) -> ()
+  public typealias NetworkUnreachable = (IxMobileSDK.IxReachability) -> ()
+  @available(*, unavailable, renamed: "Connection")
+  public enum NetworkStatus : Swift.CustomStringConvertible {
+    case notReachable, reachableViaWiFi, reachableViaWWAN
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: IxMobileSDK.IxReachability.NetworkStatus, b: IxMobileSDK.IxReachability.NetworkStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Connection : Swift.CustomStringConvertible {
+    case unavailable, wifi, cellular
+    public var description: Swift.String {
+      get
+    }
+    @available(*, deprecated, renamed: "unavailable")
+    public static let none: IxMobileSDK.IxReachability.Connection
+    public static func == (a: IxMobileSDK.IxReachability.Connection, b: IxMobileSDK.IxReachability.Connection) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var whenReachable: IxMobileSDK.IxReachability.NetworkReachable?
+  public var whenUnreachable: IxMobileSDK.IxReachability.NetworkUnreachable?
+  @available(*, deprecated, renamed: "allowsCellularConnection")
+  final public let reachableOnWWAN: Swift.Bool
+  public var allowsCellularConnection: Swift.Bool
+  public var notificationCenter: Foundation.NotificationCenter
+  @available(*, deprecated, renamed: "connection.description")
+  public var currentReachabilityString: Swift.String {
+    get
+  }
+  @available(*, unavailable, renamed: "connection")
+  public var currentReachabilityStatus: IxMobileSDK.IxReachability.Connection {
+    get
+  }
+  public var connection: IxMobileSDK.IxReachability.Connection {
+    get
+  }
+  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main)
+  convenience public init(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  @objc deinit
+}
+extension IxMobileSDK.IxReachability {
+  public func startNotifier() throws
+  public func stopNotifier()
+  @available(*, deprecated, message: "Please use `connection != .none`")
+  public var isReachable: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .cellular`")
+  public var isReachableViaWWAN: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .wifi`")
+  public var isReachableViaWiFi: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
+extension IxMobileSDK.ixErrCode : Swift.Equatable {}
+extension IxMobileSDK.ixErrCode : Swift.Hashable {}
+extension IxMobileSDK.ixErrCode : Swift.RawRepresentable {}
+extension IxMobileSDK.COLLECT_COMMAND : Swift.Equatable {}
+extension IxMobileSDK.COLLECT_COMMAND : Swift.Hashable {}
+extension IxMobileSDK.COLLECT_COMMAND : Swift.RawRepresentable {}
+extension IxMobileSDK.FORMAT_TYPE : Swift.Equatable {}
+extension IxMobileSDK.FORMAT_TYPE : Swift.Hashable {}
+extension IxMobileSDK.FORMAT_TYPE : Swift.RawRepresentable {}
+extension IxMobileSDK.KEYPAD_TYPE : Swift.Equatable {}
+extension IxMobileSDK.KEYPAD_TYPE : Swift.Hashable {}
+extension IxMobileSDK.KEYPAD_TYPE : Swift.RawRepresentable {}
+extension IxMobileSDK.SHUFFLE_TYPE : Swift.Equatable {}
+extension IxMobileSDK.SHUFFLE_TYPE : Swift.Hashable {}
+extension IxMobileSDK.SHUFFLE_TYPE : Swift.RawRepresentable {}
+extension IxMobileSDK.FUNC_KEY : Swift.Equatable {}
+extension IxMobileSDK.FUNC_KEY : Swift.Hashable {}
+extension IxMobileSDK.FUNC_KEY : Swift.RawRepresentable {}
+extension IxMobileSDK.CHECKRULE : Swift.Equatable {}
+extension IxMobileSDK.CHECKRULE : Swift.Hashable {}
+extension IxMobileSDK.CHECKRULE : Swift.RawRepresentable {}
+extension IxMobileSDK.RESULT : Swift.Equatable {}
+extension IxMobileSDK.RESULT : Swift.Hashable {}
+extension IxMobileSDK.RESULT : Swift.RawRepresentable {}
+extension IxMobileSDK.VIBRATION : Swift.Equatable {}
+extension IxMobileSDK.VIBRATION : Swift.Hashable {}
+extension IxMobileSDK.VIBRATION : Swift.RawRepresentable {}
+extension IxMobileSDK.ACC_LANG_TYPE : Swift.Equatable {}
+extension IxMobileSDK.ACC_LANG_TYPE : Swift.Hashable {}
+extension IxMobileSDK.ACC_LANG_TYPE : Swift.RawRepresentable {}
+@available(*, unavailable, renamed: "Connection")
+extension IxMobileSDK.IxReachability.NetworkStatus : Swift.Equatable {}
+@available(*, unavailable, renamed: "Connection")
+extension IxMobileSDK.IxReachability.NetworkStatus : Swift.Hashable {}
+extension IxMobileSDK.IxReachability.Connection : Swift.Equatable {}
+extension IxMobileSDK.IxReachability.Connection : Swift.Hashable {}
