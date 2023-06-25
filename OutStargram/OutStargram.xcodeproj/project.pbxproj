@@ -16,6 +16,10 @@
 		352B04AC2A3EC1DC00CA43D7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B04AB2A3EC1DC00CA43D7 /* TabBarController.swift */; };
 		352B04AF2A3EC67B00CA43D7 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B04AE2A3EC67B00CA43D7 /* FeedTableViewCell.swift */; };
 		352B04B12A3ED02200CA43D7 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B04B02A3ED02200CA43D7 /* UIButton+.swift */; };
+		358AF78A2A47E4110083D6DD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358AF7892A47E4110083D6DD /* ProfileViewController.swift */; };
+		358AF78D2A47EBFC0083D6DD /* ProfileDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358AF78C2A47EBFC0083D6DD /* ProfileDataView.swift */; };
+		358AF78F2A47F1590083D6DD /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358AF78E2A47F1590083D6DD /* ProfileCollectionViewCell.swift */; };
+		358AF7912A4804230083D6DD /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358AF7902A4804230083D6DD /* UploadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		352B04AB2A3EC1DC00CA43D7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		352B04AE2A3EC67B00CA43D7 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		352B04B02A3ED02200CA43D7 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		358AF7892A47E4110083D6DD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		358AF78C2A47EBFC0083D6DD /* ProfileDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataView.swift; sourceTree = "<group>"; };
+		358AF78E2A47F1590083D6DD /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		358AF7902A4804230083D6DD /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +84,31 @@
 		352B04AD2A3EC1E000CA43D7 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				352B04982A3EC10D00CA43D7 /* FeedViewController.swift */,
-				352B04AE2A3EC67B00CA43D7 /* FeedTableViewCell.swift */,
+				358AF7882A47E3FB0083D6DD /* Feed */,
 				352B04AB2A3EC1DC00CA43D7 /* TabBarController.swift */,
+				358AF78B2A47E4170083D6DD /* Profile */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		358AF7882A47E3FB0083D6DD /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				352B04982A3EC10D00CA43D7 /* FeedViewController.swift */,
+				352B04AE2A3EC67B00CA43D7 /* FeedTableViewCell.swift */,
+				358AF7902A4804230083D6DD /* UploadViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		358AF78B2A47E4170083D6DD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				358AF7892A47E4110083D6DD /* ProfileViewController.swift */,
+				358AF78E2A47F1590083D6DD /* ProfileCollectionViewCell.swift */,
+				358AF78C2A47EBFC0083D6DD /* ProfileDataView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				352B04992A3EC10D00CA43D7 /* FeedViewController.swift in Sources */,
+				358AF7912A4804230083D6DD /* UploadViewController.swift in Sources */,
+				358AF78F2A47F1590083D6DD /* ProfileCollectionViewCell.swift in Sources */,
 				352B04B12A3ED02200CA43D7 /* UIButton+.swift in Sources */,
 				352B04AC2A3EC1DC00CA43D7 /* TabBarController.swift in Sources */,
 				352B04952A3EC10D00CA43D7 /* AppDelegate.swift in Sources */,
+				358AF78A2A47E4110083D6DD /* ProfileViewController.swift in Sources */,
 				352B04972A3EC10D00CA43D7 /* SceneDelegate.swift in Sources */,
+				358AF78D2A47EBFC0083D6DD /* ProfileDataView.swift in Sources */,
 				352B04AF2A3EC67B00CA43D7 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +338,7 @@
 				DEVELOPMENT_TEAM = RMSZ82KT4D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OutStargram/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사진추가를 위해서 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -333,6 +366,7 @@
 				DEVELOPMENT_TEAM = RMSZ82KT4D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OutStargram/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사진추가를 위해서 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
