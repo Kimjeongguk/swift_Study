@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "05C505FA-A232-46D2-AAEC-B30CB2403D1C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F490980B-0C5C-43C2-B149-F15230392090"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubRepository/RepositoryListViewontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "fetchRepositories(of:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "265EC1C6-E95D-48E3-9CF3-A06B88CE52E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubRepository/RepositoryListViewontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "fetchRepositories(of:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "765B2821-DCD8-43C8-B7B9-1964D9FBBB14"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubRepository/RepositoryListViewontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "fetchRepositories(of:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE82CCF8-F174-45E8-B2AC-A87F4191BB81"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubRepository/RepositoryListViewontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "fetchRepositories(of:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE82CCF8-F174-45E8-B2AC-A87F4191BB81 - 7764b990c1a36013"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #5 (__C.NSHTTPURLResponse, Foundation.Data) -&gt; Swift.Array&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt; in GithubRepository.RepositoryListViewController.fetchRepositories(of: Swift.String) -&gt; ()"
+                  moduleName = "GithubRepository"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeongguk/Documents/Study/GithubRepository/GithubRepository/RepositoryListViewontroller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "392">
+               </Location>
+               <Location
+                  uuid = "CE82CCF8-F174-45E8-B2AC-A87F4191BB81 - 7764b990c1a36013"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #5 (__C.NSHTTPURLResponse, Foundation.Data) -&gt; Swift.Array&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt; in GithubRepository.RepositoryListViewController.fetchRepositories(of: Swift.String) -&gt; ()"
+                  moduleName = "GithubRepository"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeongguk/Documents/Study/GithubRepository/GithubRepository/RepositoryListViewontroller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "516">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B6CAF02-08C4-4BB2-8BA9-FD50B0250201"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubRepository/RepositoryListViewontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "fetchRepositories(of:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4DB3A5C1-09A0-440C-AA68-E2220CD4D27B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubRepository/RepositoryListViewontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "fetchRepositories(of:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4DB3A5C1-09A0-440C-AA68-E2220CD4D27B - 53b3a0d65ab7fd7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Optional&lt;GithubRepository.Repository&gt; in closure #7 (Swift.Array&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; Swift.Array&lt;GithubRepository.Repository&gt; in GithubRepository.RepositoryListViewController.fetchRepositories(of: Swift.String) -&gt; ()"
+                  moduleName = "GithubRepository"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeongguk/Documents/Study/GithubRepository/GithubRepository/RepositoryListViewontroller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "4DB3A5C1-09A0-440C-AA68-E2220CD4D27B - 53b3a0d65ab7fd7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Optional&lt;GithubRepository.Repository&gt; in closure #7 (Swift.Array&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; Swift.Array&lt;GithubRepository.Repository&gt; in GithubRepository.RepositoryListViewController.fetchRepositories(of: Swift.String) -&gt; ()"
+                  moduleName = "GithubRepository"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeongguk/Documents/Study/GithubRepository/GithubRepository/RepositoryListViewontroller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "384">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
